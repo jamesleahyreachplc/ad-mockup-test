@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "webpage";
+  }
+
+  .webpage {
+    justify-content: centre;
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Left centre Right";
+    grid-area: webpage;
+  }
+
+  .centre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Top"
+      "Bottom";
+    grid-area: centre;
+  }
+
+  .Top { grid-area: Top; }
+
+  .Bottom { grid-area: Bottom; }
+
+  .Left {
+    grid-area: Left;
+  }
+
+  .Right {
+    grid-area: Right;
+  }
+
+</style>
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="webpage">
+        <div class="centre">
+          <div class="Top">
+            <img class="top-banner-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-top-big-MG-v1.png?raw=true">
+          </div>
+          <div class="Bottom">
+            <iframe name="ifr" style="position: absolute; height:1100px; width:1000px;" src="https://doppleganger-prod.s3.eu-west-1.amazonaws.com/corklive/19383480.html" onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'">
+          </iframe>
+          </div>
+        </div>
+        <div class="Left">
+          <img class="left-Skin-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-left-MG-v1.png?raw=true">
+          </div>
+        <div class="Right">
+          <img class="right-Skin-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-Right-MG-v1.png?raw=true">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="grid-container">
+  <div class="webpage">
+    <div class="centre">
+
+      <div class="Top">
+        <img class="top-banner-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-top-big-MG-v1.png?raw=true">
+      </div>
+      <div class="Bottom">
+        <iframe name="ifr" style="position: absolute; height:1100px; width:1000px;" src="https://doppleganger-prod.s3.eu-west-1.amazonaws.com/corklive/19383480.html" onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="Left">
+      <img class="left-Skin-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-left-MG-v1.png?raw=true">
+    </div>
+
+    <div class="Right">
+      <img class="right-Skin-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-Right-MG-v1.png?raw=true">
+    </div>
+  </div>
+</div>-->
+  </body>
+</html>

@@ -17,7 +17,9 @@
       grid-area: 1 / 2 / 2 / 3;
     width:1000px;
   }
-
+  img.left-Skin-ad{
+    float: right;
+  }
 </style>
 <head>
 
@@ -30,10 +32,10 @@
     <div class="centre">
       <img class="top-banner-ad"src="https://github.com/jamesleahyreachplc/ad-mockup-test/blob/main/Assets/Skin-top-big-MG-v1.png?raw=true">
 
-      <div id="iframe_container" style=" background: white; ">
-<iframe name="ifr" style="position: absolute; height:100%; width:1000px;" src="https://doppleganger-prod.s3.eu-west-1.amazonaws.com/corklive/19383480.html" onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'">
-</iframe>
-</div>
+      <div id="iframe_container">
+        <iframe name="ifr" style="position: absolute; height:100%; width:1000px;" src="https://doppleganger-prod.s3.eu-west-1.amazonaws.com/corklive/19383480.html" onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'">
+        </iframe>
+      </div>
 
       <!-- <div class="mirror">
         <iframe scrolling="no" src="https://doppleganger-prod.s3.eu-west-1.amazonaws.com/corklive/19383480.html" style="border: 0px none;  height: 100%; width: 100%;">
@@ -48,7 +50,7 @@
   </div>
 </body>
 <script> function noScroll ( )
-  { window . scrollTo ( 0 , 0 ) ; } // add listener to disable scroll 
+  { window . scrollTo ( 0 , 0 ) ; } // add listener to disable scroll
   window.addEventListener ( 'scroll' , noScroll ) ;
   // Remove listener to re-enable scroll window . removeEventListener ( 'scroll' , noScroll ) ;
 </script>
